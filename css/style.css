@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ms-main-color: #7FFFD4;
+}
+
+/*
+*  Common
+*/
+.container {
+    height: 100vh;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+
+/*
+*  Header
+*/
+header {
+    min-height: 11.25rem;
+    padding: 0 2.5rem;
+    background-color: blue;
+}
+
+
+
+/*
+*  Main
+*/
+main {
+    background-color: var(--ms-main-color);
+    flex-grow: 1;
+}
+
+#board {
+    padding: 50px 0;
+    max-width: 71.25rem;
+    aspect-ratio: 1;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#cell {
+    border: 1px solid black;
+    aspect-ratio: 1;
+}
+
+#board > #cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-10{
+    width: calc(100% / 10);
+}
+
+.selected {
+    background-color: aqua;
+}
+
+
+/*
+*  Footer
+*/
+footer {
+    background-color: yellow;
+}
