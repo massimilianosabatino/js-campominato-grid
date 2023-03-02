@@ -7,6 +7,7 @@
 //Element from page
 const board = document.getElementById('board');
 const play = document.getElementById('play');
+const select = document.getElementById('set-game');
 
 /*
 *  Function
@@ -25,11 +26,15 @@ function createElement(htmlElement, htmlId, htmlClass, where, insertText) {
 function gridDimension(colRowNumber){
     const totalCell = colRowNumber * colRowNumber;
     for(let cell = 1; cell <= totalCell; cell++){
-        createElement('div', 'cell', 'cell-10', board, cell);
+        createElement('div', 'cell', `cell-${colRowNumber}`, board, cell);
     }
 }
 
-// createElement('div', 'cell', 'cell-10', board, cell);
+function playGame(){
+    board.innerHTML = '';
+    gridDimension(select.value);
+}
+
 
 
 /*
