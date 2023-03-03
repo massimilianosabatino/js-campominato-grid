@@ -10,15 +10,14 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    height: 100vh;
 }
 
 /*
 *  Common
 */
-.container {
-    height: 100vh;
-    max-width: 100rem;
-    margin: 0 auto;
+.container-page {
+    height: 100%;
 }
 
 .d-flex {
@@ -84,12 +83,13 @@ main {
 #board {
     padding: 50px 2.5rem;
     max-width: 71.25rem;
+    height: 100%;
     flex-wrap: wrap;
 }
 
 #cell {
     border: 1px solid black;
-    aspect-ratio: 1;
+    /* aspect-ratio: 1; */
 }
 
 #board > #cell {
